@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        input[type=submit]{
+            border: none;
+            width: 250px;
+            background: white;
+            color:#000;
+            font-size: 16px;
+            line-height: 10px;
+            padding: 10px 0;
+            border-radius: 15px;
+            cursor: pointer;
+        } 
+        button:active{
+            background-color:black;
+        }
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(image45.jpg);
+            border-radius:10px;
+            border-style:solid;
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+            line-height: 10px;
+            padding:50px 40px;
+            margin-top:100px;
+            margin-bottom:100px;
+            margin-left:500px;
+            margin-right:500px;
+            font-weight:bold;
+            color:white;
+        }
+        input{
+            width: 240px;
+            text-align: center;
+            background: transparent;
+            border:none;
+            border-bottom: 1px solid #fff;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 200px;
+            padding: 10px 0;
+            transition: border 0.5s;
+            outline: none;
+            color:black;
+        }    
+        input:focus{
+            background:white;
+        }
+        p{
+            border: none;
+            width: 250px;
+            background: white;
+            color:#000;
+            font-size: 16px;
+            line-height: 10px;
+            padding: 10px 0;
+            border-radius: 15px;
+            cursor: pointer;  
+        }
+    </style>
+    <script>
+        function valid(){
+            var name=document.getElementById("na");
+            var sname=document.getElementById("sn");
+            var Email=document.getElementById("en");
+            var uname=document.getElementById("un");
+            var pass=document.getElementById("pw");
+            if(name.value.trim()==""||sname.value.trim()==""||email.value.trim()==""||uname.value.trim()==""||pass.value.trim()==""){
+                alert("Any Field should not be empty ");
+                return false;
+            }
+            else {
+                alert("accepted");
+                return true;
+            }
+        }    
+    </script>
+</head>
+<div>
+<h1 style="color:white; text-decoration:underline; text-align:center;"> Signup </h1>
+<body>
+<form action="" onsubmit="return valid()">
+<input type="text" placeholder="Name" id="na"></br>
+<input type="text" placeholder="Surname" id="sn"></br>
+<input type="text" placeholder="Email or PhoneNumber" id="en"></br>
+<input type="text" placeholder="Username" id="un"></br>
+<input type="password" placeholder="password" id="pw"></br></br></br>
+<input type="submit">
+<p align="center"><a href="base.html">back</p>
+</form>
+</div>
+</body>
+</html>

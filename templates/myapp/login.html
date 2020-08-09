@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        
+        input[type=submit]{
+            border: none;
+            width: 250px;
+            background: white;
+            color:#000;
+            font-size: 16px;
+            line-height: 10px;
+            padding: 10px 0;
+            border-radius: 4px;
+            cursor: pointer;
+        } 
+        button:active{
+            background-color:black;
+        }
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images20.jpg);
+            border-radius:10px;
+            border-style:solid;
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+            padding:40px 30px;
+            margin-top:200px;
+            margin-bottom:200px;
+            margin-left:500px;
+            margin-right:500px;
+            font-weight:bold;
+            color:white;
+        }
+        input{
+            width: 240px;
+            text-align: center;
+            background: transparent;
+            border:none;
+            border-bottom: 1px solid #fff;
+            font-family:sans-serif;
+            font-size: 16px;
+            font-weight: 200px;
+            padding: 10px 0;
+            transition: border 0.55;
+            outline: none;
+            color:black;
+        }
+        input:focus{
+            background-color:white;
+        }
+        
+    </style>
+    <script>
+        function valid(){
+            var Email=document.getElementById("em");
+            var pass=document.getElementById("pw");
+            if(Email.value.trim()==""||pass.value.trim()==""){
+                alert("email & password not be empty ");
+                return false;
+            }
+            else {
+                alert("accepted");
+                return true;
+            }
+            
+        }
+    </script>
+</head>
+<div>
+    <body>
+        <h1 style="color:brown; text-decoration:uppercase;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Login </h1>
+        <form action="" onsubmit="return valid()">
+        <input type="text" placeholder="Email" id="em"></br></br>
+        <input type="password" placeholder="password" id="pw"></br></br>
+        <input type="submit"></br></br>
+        
+        
+    </form>
+</div>
+</body>
+</html>

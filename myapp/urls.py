@@ -3,6 +3,5 @@ from myapp import views
 app_name="myapp"
 
 urlpatterns = [
-    path('trial/',views.trial,name="trial"),
-    path('profile/',views.profile,name="profile"),
+    path('login/',views.login,name="login"),
 ]
